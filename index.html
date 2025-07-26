@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<label>
+    <input onclick="playAudio()" type="checkbox">
+    <span><ion-icon name="bulb-outline"></ion-icon></span>
+    <div class="bulb"></div>
+</label>
+<!-- Add an audio element -->
+<audio id="toggleSound" src="click.mp3"></audio>
+<script>
+    function playAudio() {
+        // Get the audio element
+        const audio = document.getElementById("toggleSound");
+        // Play the audio
+        audio.play();
+    }
+</script>
+<!-- For Icon -->
+<script type="module" src="https://unpkg.com/ionico
+ns@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.
+1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
